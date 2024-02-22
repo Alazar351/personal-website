@@ -1,8 +1,8 @@
 import Image from "next/image";
-import { ModeToggle } from "./toggle";
+import { ModeToggle } from "./ui/toggleMode";
 export default function Nav() {
   return (
-    <div className="flex justify-between items-center px-6 py-4">
+    <div className="flex items-center justify-between px-6 py-4">
       <div className="flex gap-4">
         <Image
           className="rounded"
@@ -13,14 +13,17 @@ export default function Nav() {
         />
         <div>
           <p className="font-medium">Alazar Lema</p>
-          <p className="text-sm text-muted-foreground">Web Developer</p>
+          <p className="mt-1 text-sm text-muted-foreground">Web Developer</p>
         </div>
       </div>
-      <div className="flex">
+      <div className="flex gap-8">
         <ModeToggle />
-        <nav>
+        <button className="flex w-10 items-center justify-center rounded  hover:bg-gray-100">
+          <img src="/menu.svg" width={24} height={24} alt="Menu open button" />
+        </button>
+        <nav className="hidden">
           <ul>
-            <li>Menu</li>
+            <li></li>
           </ul>
         </nav>
       </div>
