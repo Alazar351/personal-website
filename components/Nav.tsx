@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { ModeToggle } from "./toggle";
 export default function Nav() {
   return (
     <div className="flex justify-between items-center px-6 py-4">
@@ -11,12 +12,12 @@ export default function Nav() {
           alt="Profile Picture"
         />
         <div>
-          <p className="font-bold">Alazar Lema</p>
-          <p className="">Web Developer</p>
+          <p className="font-medium">Alazar Lema</p>
+          <p className="text-sm text-muted-foreground">Web Developer</p>
         </div>
       </div>
       <div className="flex">
-        <button>Button</button>
+        <ModeToggle />
         <nav>
           <ul>
             <li>Menu</li>
