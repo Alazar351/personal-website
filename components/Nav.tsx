@@ -1,5 +1,8 @@
 import Image from "next/image";
 import { ModeToggle } from "./ui/toggleMode";
+import { Button } from "./ui/button";
+import { Menu } from "lucide-react";
+
 export default function Nav() {
   return (
     <div className="flex items-center justify-between px-6 py-4">
@@ -18,9 +21,14 @@ export default function Nav() {
       </div>
       <div className="flex gap-8">
         <ModeToggle />
-        <button className="flex w-10 items-center justify-center rounded  hover:bg-gray-100">
-          <img src="/menu.svg" width={24} height={24} alt="Menu open button" />
-        </button>
+        <Button
+          className=" rounded-md hover:bg-gray-100 hover:text-gray-400 "
+          variant="ghost"
+          size="icon"
+        >
+          <Menu color="#9CA3AF" strokeWidth={1} size={24} />
+        </Button>
+
         <nav className="hidden">
           <ul>
             <li></li>
