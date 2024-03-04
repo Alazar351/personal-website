@@ -32,31 +32,39 @@ export default function Nav() {
         {isDesktop ? (
           <div>Desktop</div>
         ) : (
-          <div className="flex h-10 w-10 items-center  justify-center rounded-md px-3 hover:bg-gray-100 hover:text-gray-400">
+          <div className="flex h-10 w-10 items-center  justify-center rounded-md px-3 hover:bg-gray-100 dark:hover:text-gray-400">
             <Drawer open={open} onOpenChange={setOpen}>
               <DrawerTrigger className="p-2">
                 {open ? <X strokeWidth={1} /> : <Menu strokeWidth={1} />}
               </DrawerTrigger>
               <DrawerContent className="px-6 text-muted-foreground  ">
                 <ul className="py-4">
-                  <li className="my-1 flex gap-3 rounded-xl px-3 py-2 font-medium transition-colors duration-300 ease-out hover:bg-gray-200">
+                  <li className="group my-1 flex gap-3 rounded-xl px-3 py-2  transition-colors duration-300 ease-out hover:bg-gray-200 dark:hover:bg-gray-900 ">
                     <Home />
-                    Homepage
+                    <div className="font-medium dark:group-hover:text-white">
+                      Homepage
+                    </div>
                   </li>
-                  <li className="my-1 flex gap-3 rounded-xl px-3 py-2 font-medium transition-colors duration-300 ease-out hover:bg-gray-200">
+                  <li className="group my-1 flex gap-3 rounded-xl px-3 py-2  transition-colors duration-300 ease-out hover:bg-gray-200 dark:hover:bg-gray-900 ">
                     <Briefcase />
-                    Projects
+                    <div className="font-medium dark:group-hover:text-white">
+                      Projects
+                    </div>
                   </li>
-                  <li className="my-1 flex gap-3 rounded-xl px-3 py-2 font-medium transition-colors duration-300 ease-out hover:bg-gray-200">
+                  <li className="group my-1 flex gap-3 rounded-xl px-3 py-2  transition-colors duration-300 ease-out hover:bg-gray-200 dark:hover:bg-gray-900 ">
                     <User />
-                    About
+                    <div className="font-medium dark:group-hover:text-white">
+                      About
+                    </div>
                   </li>
-                  <li className="my-1 flex gap-3 rounded-xl px-3 py-2 font-medium transition-colors duration-300  ease-out hover:bg-gray-200">
+                  <li className="group my-1 flex gap-3 rounded-xl px-3 py-2  transition-colors duration-300 ease-out  hover:bg-gray-200 dark:hover:bg-gray-900 ">
                     <Mail />
-                    Contact
+                    <div className="font-medium dark:group-hover:text-white">
+                      Contact
+                    </div>
                   </li>
                 </ul>
-                <div className="my-4 h-1 rounded  bg-gray-200" />
+                <div className="my-4 h-1 rounded bg-gray-100 dark:bg-gray-900" />
                 <div className="flex items-center justify-center py-6">
                   <div className="rounded-full p-1 transition-colors  duration-300 ease-out hover:bg-gray-200">
                     <Linkedin />
