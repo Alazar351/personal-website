@@ -18,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`bg-gray-50 dark:bg-black ${inter.className}`}>
+      <body className={`bg-gray-100 dark:bg-black ${inter.className}`}>
         <ThemeProvider attribute="class" defaultTheme="system">
           <Nav />
           {children}
