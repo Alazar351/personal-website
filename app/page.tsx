@@ -1,5 +1,5 @@
 "use client";
-import CopyEmail from "@/components/copyEmail";
+import CopyEmail from "@/components/CopyEmail";
 import { Button } from "@/components/ui/button";
 import { MapPin } from "lucide-react";
 
