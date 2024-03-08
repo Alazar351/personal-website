@@ -11,6 +11,9 @@ const config = {
   prefix: "",
   theme: {
     extend: {
+      boxShadow: {
+        "main-shadow": "5px -5px 13px -10px #B4ABB5",
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
