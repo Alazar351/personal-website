@@ -19,7 +19,7 @@ export default function CopyEmail() {
     <Button
       variant={"outline"}
       onClick={copyEmail}
-      className={`w-full rounded-lg ${emailString ? "bg-green-100 hover:bg-green-100 dark:bg-green-950 dark:hover:bg-green-950" : ""}`}
+      className={`w-full rounded-lg md:max-w-36 ${emailString ? "bg-green-100 hover:bg-green-100 dark:bg-green-950 dark:hover:bg-green-950" : ""}`}
     >
       <div
         className={`transition-all duration-300 ease-in-out ${emailString ? "translate-x-3" : ""}`}
