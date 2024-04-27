@@ -30,7 +30,7 @@ export default function Nav() {
   const isDesktop = useMediaQuery("(min-width: 768px)");
   const [open, setOpen] = useState(false);
   return (
-    <div className="sticky left-0 top-0 dark:bg-[rgb(10,10,10)] md:fixed md:h-full md:w-20 2xl:w-[280px] ">
+    <div className="sticky left-0 top-0 z-50 bg-[#F5F5F5]  dark:bg-[rgb(10,10,10)] md:fixed md:h-full md:w-20 2xl:w-[280px] ">
       <nav className="flex items-center justify-between px-6 py-4 md:h-full md:flex-col md:px-4 md:py-10 ">
         <div className="flex flex-col gap-8">
           <div className="flex items-center justify-center gap-4 2xl:flex-col">

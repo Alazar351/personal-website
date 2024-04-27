@@ -11,6 +11,11 @@ const config = {
   prefix: "",
   theme: {
     extend: {
+      screens: {
+        md: "876px",
+        xl: "1270px",
+        "2xl": "1440px",
+      },
       boxShadow: {
         "main-shadow": "5px -5px 13px -10px #B4ABB5",
       },
