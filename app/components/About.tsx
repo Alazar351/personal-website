@@ -4,7 +4,7 @@ import { MapPin } from "lucide-react";
 
 export default function About() {
   return (
-    <section className="mx-auto md:w-[600px] lg:w-[720px] xl:w-[904px]">
+    <section>
       <li className="mb-10 w-max rounded-full bg-green-100 px-3 text-sm text-green-600 dark:bg-green-950 dark:text-green-500">
         Available for work
       </li>

@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 
 export default async function BlogCard() {
   return (
-    <section className="mx-auto md:w-[600px] lg:w-[720px] xl:w-[904px]">
+    <section>
       <h2 className="text-[26px] font-medium">Blog</h2>
       <div className="mt-8 grid grid-cols-1 gap-16">
         <div className="flex flex-col gap-8 md:flex-row">

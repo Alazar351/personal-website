@@ -1,51 +1,10 @@
-import Image from "next/image";
-import Project1 from "@/public/assets/dentists.png";
-import Project2 from "@/public/assets/oxelar.png";
-import Link from "next/link";
-import { Card, CardContent } from "@/components/ui/card";
+import Portfolio from "./Portfolio";
+
 export default function Work() {
   return (
-    <section className="mx-auto md:w-[600px] lg:w-[720px] xl:w-[904px]">
-      <h2 className="text-[26px] font-medium">Selected Work</h2>
-      <div className="mt-8 grid grid-cols-1 gap-8 lg:grid-cols-2">
-        <Link href={"#"}>
-          <Card className="border-0 shadow-none dark:bg-transparent dark:bg-none">
-            <div className="overflow-clip rounded-xl">
-              <Image
-                src={Project1}
-                alt="Dentists website screenshot"
-                className="transition-transform duration-700 ease-out hover:scale-105"
-              />
-            </div>
-            <CardContent>
-              <div className="mt-5 flex flex-col gap-1">
-                <p className="font-medium">Dentists</p>
-                <p className="text-sm text-muted-foreground">Website</p>
-              </div>
-            </CardContent>
-          </Card>
-        </Link>
-        <Link href={"#"}>
-          <Card className="border-0 shadow-none dark:bg-transparent">
-            <div className="overflow-clip rounded-xl">
-              <Image
-                src={Project2}
-                alt="Dentists website screenshot"
-                className=" transition-transform duration-700 ease-out hover:scale-105"
-              />
-            </div>
-
-            <CardContent>
-              <div className="mt-5 flex flex-col gap-1">
-                <p className="font-medium">Oxelar</p>
-                <p className="text-sm text-muted-foreground">
-                  Website Landing Page
-                </p>
-              </div>
-            </CardContent>
-          </Card>
-        </Link>
-      </div>
+    <section>
+      <h2 className="mb-8 text-[26px] font-medium">Selected Work</h2>
+      <Portfolio />
     </section>
   );
 }

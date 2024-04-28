@@ -25,6 +25,7 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
+import Link from "next/link";
 
 export default function Nav() {
   const isDesktop = useMediaQuery("(min-width: 876px)");
@@ -57,12 +58,14 @@ export default function Nav() {
             <ul className="hidden flex-col gap-1 dark:text-gray-400 md:flex 2xl:w-[232px]">
               <Tooltip>
                 <TooltipTrigger>
-                  <li className="group flex h-[48px] min-w-[48px] items-center justify-start gap-3 rounded-xl px-3 py-2 transition-colors duration-700 ease-out hover:bg-gray-200 dark:hover:bg-gray-900 2xl:h-[40px] ">
-                    <Home className="dark:group-hover:text-white 2xl:dark:group-hover:text-gray-400" />
-                    <div className="hidden font-medium dark:group-hover:text-white 2xl:block">
-                      Homepage
-                    </div>
-                  </li>
+                  <Link href={"/"}>
+                    <li className="group flex h-[48px] min-w-[48px] items-center justify-start gap-3 rounded-xl px-3 py-2 transition-colors duration-700 ease-out hover:bg-gray-200 dark:hover:bg-gray-900 2xl:h-[40px] ">
+                      <Home className="dark:group-hover:text-white 2xl:dark:group-hover:text-gray-400" />
+                      <div className="hidden font-medium dark:group-hover:text-white 2xl:block">
+                        Homepage
+                      </div>
+                    </li>
+                  </Link>
                 </TooltipTrigger>
                 <TooltipContent
                   className="bg-gray-400 text-xs text-white 2xl:hidden"
@@ -73,12 +76,14 @@ export default function Nav() {
               </Tooltip>
               <Tooltip>
                 <TooltipTrigger>
-                  <li className="group flex h-[48px] min-w-[48px] items-center justify-start gap-3 rounded-xl px-3 py-2 transition-colors duration-700 ease-out hover:bg-gray-200 dark:hover:bg-gray-900 2xl:h-[40px] ">
-                    <Briefcase className="dark:group-hover:text-white 2xl:dark:group-hover:text-gray-400" />
-                    <div className="hidden font-medium dark:group-hover:text-white 2xl:block">
-                      Projects
-                    </div>
-                  </li>
+                  <Link href={"/Projects"}>
+                    <li className="group flex h-[48px] min-w-[48px] items-center justify-start gap-3 rounded-xl px-3 py-2 transition-colors duration-700 ease-out hover:bg-gray-200 dark:hover:bg-gray-900 2xl:h-[40px] ">
+                      <Briefcase className="dark:group-hover:text-white 2xl:dark:group-hover:text-gray-400" />
+                      <div className="hidden font-medium dark:group-hover:text-white 2xl:block">
+                        Projects
+                      </div>
+                    </li>
+                  </Link>
                 </TooltipTrigger>
                 <TooltipContent
                   className="bg-gray-400 text-xs text-white 2xl:hidden"
@@ -139,7 +144,7 @@ export default function Nav() {
           </TooltipProvider>
         </div>
         <div className="flex gap-8 md:flex-col">
-          <div className="hidden flex-col gap-4 md:flex 2xl:hidden">
+          <div className="hidden flex-col gap-4 border-t-2 border-t-gray-300 pt-8 dark:border-t-gray-800 md:flex 2xl:hidden">
             <div className="group flex items-center justify-center rounded-full p-1 transition-colors  duration-700 ease-out hover:bg-gray-200 dark:hover:bg-gray-900 ">
               <Linkedin className="text-gray-400 group-hover:text-black dark:group-hover:text-gray-200" />
             </div>
@@ -156,18 +161,22 @@ export default function Nav() {
                 </DrawerTrigger>
                 <DrawerContent className="px-6 text-muted-foreground">
                   <ul className="py-4">
-                    <li className="group my-1 flex gap-3 rounded-xl px-3 py-2  transition-colors duration-300 ease-out hover:bg-gray-200 dark:hover:bg-gray-900 ">
-                      <Home />
-                      <div className="font-medium dark:group-hover:text-white">
-                        Homepage
-                      </div>
-                    </li>
-                    <li className="group my-1 flex gap-3 rounded-xl px-3 py-2  transition-colors duration-300 ease-out hover:bg-gray-200 dark:hover:bg-gray-900 ">
-                      <Briefcase />
-                      <div className="font-medium dark:group-hover:text-white">
-                        Projects
-                      </div>
-                    </li>
+                    <Link href={"/"}>
+                      <li className="group my-1 flex gap-3 rounded-xl px-3 py-2  transition-colors duration-300 ease-out hover:bg-gray-200 dark:hover:bg-gray-900 ">
+                        <Home />
+                        <div className="font-medium dark:group-hover:text-white">
+                          Homepage
+                        </div>
+                      </li>
+                    </Link>
+                    <Link href={"/Projects"}>
+                      <li className="group my-1 flex gap-3 rounded-xl px-3 py-2  transition-colors duration-300 ease-out hover:bg-gray-200 dark:hover:bg-gray-900 ">
+                        <Briefcase />
+                        <div className="font-medium dark:group-hover:text-white">
+                          Projects
+                        </div>
+                      </li>
+                    </Link>
                     <li className="group my-1 flex gap-3 rounded-xl px-3 py-2  transition-colors duration-300 ease-out hover:bg-gray-200 dark:hover:bg-gray-900 ">
                       <User />
                       <div className="font-medium dark:group-hover:text-white">

@@ -6,9 +6,25 @@ export default defineType({
   type: "document",
   fields: [
     defineField({
+      name: "tags",
+      title: "Tags",
+      type: "array",
+      of: [{ type: "string" }],
+    }),
+    defineField({
       name: "name",
       title: "Name",
       type: "string",
+    }),
+    defineField({
+      name: "description",
+      title: "Description",
+      type: "string",
+    }),
+    defineField({
+      name: "url",
+      title: "URL",
+      type: "url",
     }),
     defineField({
       name: "slug",
@@ -51,7 +67,17 @@ export default defineType({
       name: "goals",
       title: "Goals",
       type: "array",
-      of: [{ type: "string" }],
+      of: [
+        {
+          type: "object",
+          name: "goal",
+          title: "Goal",
+          fields: [
+            { type: "string", name: "title" },
+            { type: "string", name: "description" },
+          ],
+        },
+      ],
     }),
     defineField({
       name: "secondaryImage",
@@ -70,18 +96,29 @@ export default defineType({
       name: "solutions",
       title: "Solutions",
       type: "array",
-      of: [{ type: "string" }],
+      of: [
+        {
+          type: "object",
+          name: "solution",
+          title: "Solution",
+          fields: [
+            { type: "string", name: "title" },
+            { type: "string", name: "description" },
+          ],
+        },
+      ],
     }),
-    defineField({
-      name: "url",
-      title: "URL",
-      type: "url",
-    }),
+
     defineField({
       name: "tools",
       title: "Tools",
       type: "array",
       of: [{ type: "string" }],
+    }),
+    defineField({
+      name: "testimonials",
+      title: "Testimonials",
+      type: "string",
     }),
     defineField({
       name: "conclusion",

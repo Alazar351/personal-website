@@ -29,7 +29,9 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="system">
           <Nav />
           <main className="m-2 rounded-lg bg-white px-6 py-16 shadow-main-shadow dark:bg-[rgb(20,20,20)] md:ml-[88px] md:px-20 md:py-[120px] 2xl:ml-[288px]">
-            {children}
+            <div className="mx-auto md:w-[600px] lg:w-[720px] xl:w-[904px]">
+              {children}
+            </div>
           </main>
         </ThemeProvider>
       </body>
