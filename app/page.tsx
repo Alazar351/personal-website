@@ -1,4 +1,5 @@
 import About from "./components/About";
+import Testimony from "./components/Testimony";
 import Work from "./components/Work";
 
 export default function Home() {
@@ -6,6 +7,7 @@ export default function Home() {
     <div className="space-y-20">
       <About />
       <Work />
+      <Testimony />
     </div>
   );
 }

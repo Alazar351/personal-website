@@ -27,7 +27,7 @@ import {
 } from "@/components/ui/tooltip";
 
 export default function Nav() {
-  const isDesktop = useMediaQuery("(min-width: 768px)");
+  const isDesktop = useMediaQuery("(min-width: 876px)");
   const [open, setOpen] = useState(false);
   return (
     <div className="sticky left-0 top-0 z-50 bg-[#F5F5F5]  dark:bg-[rgb(10,10,10)] md:fixed md:h-full md:w-20 2xl:w-[280px] ">
