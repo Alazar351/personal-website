@@ -16,12 +16,12 @@ export default function PortfolioDetail() {
     <>
       <Link
         href={"/Projects"}
-        className="group flex w-max items-center justify-start gap-3 px-2 pb-4"
+        className="group flex w-max items-center justify-start gap-3 px-2 pb-6"
       >
         <ChevronLeft className="h-3 w-3 text-gray-400 group-hover:text-black" />
         <p className="text-sm font-medium">Back to list</p>
       </Link>
-      <section className="space-y-20 border-y-2 border-y-gray-300 py-20">
+      <section className="space-y-20 border-y-2 border-y-gray-200 py-20 dark:border-y-gray-800">
         <div>
           <div id="tags" className="flex gap-[10px]">
             <p className="w-max rounded-lg bg-[#fae9e1] px-3 py-1 text-sm text-[#a15830] dark:bg-[#382218] dark:text-[#fabc9b]">
@@ -38,7 +38,7 @@ export default function PortfolioDetail() {
             <h1 id="title" className="text-[32px] font-semibold">
               Tetrisly Design System
             </h1>
-            <p id="description" className="text-lg text-muted-foreground">
+            <p id="description" className="mt-2 text-lg text-muted-foreground">
               Not another useless UI kit. Tetrisly Design System is a collection
               of rules, tools and processes which simplify design processes and
               the development of digital products.
@@ -79,7 +79,7 @@ export default function PortfolioDetail() {
             experiences and interfaces.
           </p>
         </div>
-        <div className="space-y-20 border-y-2 border-y-gray-300 py-20">
+        <div className="space-y-20 border-y-2 border-y-gray-200 py-20 dark:border-y-gray-800">
           <div className="flex flex-col items-start justify-start gap-6 md:gap-10 xl:flex-row">
             <h2 className="min-w-[240px] text-[26px] font-medium">Goals</h2>
             <div className="col-span-2 flex flex-col gap-10">
