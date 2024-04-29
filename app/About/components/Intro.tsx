@@ -10,15 +10,17 @@ export default function Intro() {
           Nextjs Developer
         </p>
         <p className="mt-10 text-lg text-muted-foreground">
-          Alazar, a product designer and design system specialist from Poland
-          with over 9 years of experience focusing on user experience and design
-          systems to creating a user-centered design in SaaS products.
+          Alazar, a fullstack Nextjs developer from Minnesota with 2 years of
+          experience focusing bringing design concepts to life and collaborating
+          closely with clients to understand their unique needs and deliver
+          solutions that exceed expectations.
         </p>
         <p className="mt-5 text-lg text-muted-foreground">
-          Co-creator at Tetrisly one of the most popular starter kits for design
-          systems. I had the opportunity to work with Phenom.com, Bidroom.com or
-          Perfops.net but also with many startups from around the world as a
-          Lead Designer.
+          I excel in accurately translating design mockups into fully responsive
+          and interactive web applications using Next.js, React, and other
+          cutting-edge frontend technologies. My commitment to pixel-perfect
+          design ensures that every element aligns seamlessly with the client's
+          vision, creating a memorable and engaging user experience.
         </p>
       </div>
       <Image

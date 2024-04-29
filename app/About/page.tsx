@@ -10,8 +10,8 @@ export default function About() {
       <Intro />
       <Service />
       <Tools />
-      <Experience />
-      <Education />
+      {/* <Experience />
+      <Education /> */}
     </div>
   );
 }

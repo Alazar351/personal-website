@@ -19,7 +19,9 @@ export default function Info() {
         </div>
       </div>
       <div className="mt-10 flex flex-col items-center justify-start gap-4 md:flex-row ">
-        <Button className="w-full md:max-w-36">Schedule a call</Button>
+        <Button className="w-full transition-colors duration-700 ease-out dark:bg-[#282828] dark:text-white dark:hover:bg-[#424242] md:max-w-36">
+          Schedule a call
+        </Button>
         <CopyEmail />
       </div>
     </section>

@@ -22,7 +22,9 @@ export default function About() {
         to enhance usability and engagement on websites and applications.
       </p>
       <div className="flex flex-col md:flex-row md:gap-5">
-        <Button className="mb-4 w-full rounded-lg md:max-w-20">About</Button>
+        <Button className="mb-4 w-full rounded-lg transition-colors duration-700 ease-out dark:bg-[#282828] dark:text-white dark:hover:bg-[#424242] md:max-w-20">
+          About
+        </Button>
         <CopyEmail />
       </div>
     </section>
