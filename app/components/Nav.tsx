@@ -130,12 +130,14 @@ export default function Nav() {
               </Tooltip>
               <Tooltip>
                 <TooltipTrigger>
-                  <li className="group flex h-[48px] min-w-[48px] items-center justify-start gap-3 rounded-xl px-3 py-2 transition-colors duration-700 ease-out hover:bg-gray-200 dark:hover:bg-gray-900 2xl:h-[40px]">
-                    <Mail className="dark:group-hover:text-white 2xl:dark:group-hover:text-gray-400" />
-                    <div className="hidden font-medium dark:group-hover:text-white 2xl:block">
-                      Contact
-                    </div>
-                  </li>
+                  <Link href={"/Contact"}>
+                    <li className="group flex h-[48px] min-w-[48px] items-center justify-start gap-3 rounded-xl px-3 py-2 transition-colors duration-700 ease-out hover:bg-gray-200 dark:hover:bg-gray-900 2xl:h-[40px]">
+                      <Mail className="dark:group-hover:text-white 2xl:dark:group-hover:text-gray-400" />
+                      <div className="hidden font-medium dark:group-hover:text-white 2xl:block">
+                        Contact
+                      </div>
+                    </li>
+                  </Link>
                 </TooltipTrigger>
                 <TooltipContent
                   className="bg-gray-400 text-xs text-white 2xl:hidden"
@@ -197,13 +199,14 @@ export default function Nav() {
                         </div>
                       </li>
                     </Link>
-
-                    <li className="group my-1 flex gap-3 rounded-xl px-3 py-2  transition-colors duration-300 ease-out  hover:bg-gray-200 dark:hover:bg-gray-900 ">
-                      <Mail />
-                      <div className="font-medium dark:group-hover:text-white">
-                        Contact
-                      </div>
-                    </li>
+                    <Link href={"/Contact"}>
+                      <li className="group my-1 flex gap-3 rounded-xl px-3 py-2  transition-colors duration-300 ease-out  hover:bg-gray-200 dark:hover:bg-gray-900 ">
+                        <Mail />
+                        <div className="font-medium dark:group-hover:text-white">
+                          Contact
+                        </div>
+                      </li>
+                    </Link>
                   </ul>
                   <div className="my-4 h-1 rounded bg-gray-100 dark:bg-gray-900" />
                   <div className="flex items-center justify-center py-6">
