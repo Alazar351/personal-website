@@ -289,7 +289,7 @@ export default function PortfolioDetail() {
           </div>
         </div>
       </section>
-      <div className="mt-20 space-y-8">
+      <div className="mt-20 flex flex-col gap-8">
         <p className="text-[26px] font-medium">More projects</p>
         <Portfolio />
         <Link href={"/Projects"}>
