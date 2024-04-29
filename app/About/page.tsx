@@ -1,3 +1,4 @@
+import Experience from "./components/Experience";
 import Intro from "./components/Intro";
 import Service from "./components/Service";
 import Tools from "./components/Tools";
@@ -8,6 +9,7 @@ export default function About() {
       <Intro />
       <Service />
       <Tools />
+      <Experience />
     </div>
   );
 }
