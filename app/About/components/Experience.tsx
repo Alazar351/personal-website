@@ -3,11 +3,11 @@ export default function Experience() {
     <section>
       <h2 className="text-[26px] font-medium">Experience</h2>
       <div className="mt-8">
-        <div className="border-b-2 border-b-gray-200 pb-10">
+        <div className="border-b-2 border-b-gray-200 pb-10 dark:border-b-gray-800">
           <p className="text-muted-foreground">March 2021 - Present</p>
           <div className="mt-8">
             <p>Company</p>
-            <p className="text-sm text-muted-foreground">Role</p>
+            <p className="pt-2 text-sm text-muted-foreground">Role</p>
           </div>
           <p className="mt-6 text-muted-foreground">
             Engaged in executing studies, trial runs with users, brainstorming,
@@ -19,11 +19,11 @@ export default function Experience() {
         </div>
         {/* More entries down here v */}
 
-        <div className="border-b-2 border-b-gray-200 py-10">
+        <div className="border-b-2 border-b-gray-200 py-10 dark:border-b-gray-800">
           <p className="text-muted-foreground">October 2020 - July 2021</p>
           <div className="mt-8">
             <p>Company</p>
-            <p className="text-sm text-muted-foreground">Role</p>
+            <p className="pt-2 text-sm text-muted-foreground">Role</p>
           </div>
           <p className="mt-6 text-muted-foreground">
             Engaged in executing studies, trial runs with users, brainstorming,
@@ -38,7 +38,7 @@ export default function Experience() {
           <p className="text-muted-foreground">October 2020 - July 2021</p>
           <div className="mt-8">
             <p>Company</p>
-            <p className="text-sm text-muted-foreground">Role</p>
+            <p className="pt-2 text-sm text-muted-foreground">Role</p>
           </div>
           <p className="mt-6 text-muted-foreground">
             Engaged in executing studies, trial runs with users, brainstorming,

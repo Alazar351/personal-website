@@ -1,3 +1,4 @@
+import Education from "./components/Education";
 import Experience from "./components/Experience";
 import Intro from "./components/Intro";
 import Service from "./components/Service";
@@ -10,6 +11,7 @@ export default function About() {
       <Service />
       <Tools />
       <Experience />
+      <Education />
     </div>
   );
 }
