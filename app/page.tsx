@@ -9,7 +9,10 @@ export default function Home() {
       <About />
       <Work />
       <Testimony />
-      <BlogCard />
+      <div>
+        <h2 className="text-[26px] font-medium">Blog</h2>
+        <BlogCard />
+      </div>
     </div>
   );
 }

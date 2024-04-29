@@ -112,12 +112,14 @@ export default function Nav() {
               </Tooltip>
               <Tooltip>
                 <TooltipTrigger>
-                  <li className="group flex h-[48px] min-w-[48px] items-center justify-start gap-3 rounded-xl px-3 py-2 transition-colors duration-700 ease-out hover:bg-gray-200 dark:hover:bg-gray-900 2xl:h-[40px]">
-                    <Pencil className="dark:group-hover:text-white 2xl:dark:group-hover:text-gray-400" />
-                    <div className="hidden font-medium dark:group-hover:text-white 2xl:block">
-                      Blog
-                    </div>
-                  </li>
+                  <Link href={"/Blog"}>
+                    <li className="group flex h-[48px] min-w-[48px] items-center justify-start gap-3 rounded-xl px-3 py-2 transition-colors duration-700 ease-out hover:bg-gray-200 dark:hover:bg-gray-900 2xl:h-[40px]">
+                      <Pencil className="dark:group-hover:text-white 2xl:dark:group-hover:text-gray-400" />
+                      <div className="hidden font-medium dark:group-hover:text-white 2xl:block">
+                        Blog
+                      </div>
+                    </li>
+                  </Link>
                 </TooltipTrigger>
                 <TooltipContent
                   className="bg-gray-400 text-xs text-white 2xl:hidden"
@@ -187,12 +189,15 @@ export default function Nav() {
                         </div>
                       </li>
                     </Link>
-                    <li className="group my-1 flex gap-3 rounded-xl px-3 py-2  transition-colors duration-300 ease-out  hover:bg-gray-200 dark:hover:bg-gray-900 ">
-                      <Pencil />
-                      <div className="font-medium dark:group-hover:text-white">
-                        Blog
-                      </div>
-                    </li>
+                    <Link href={"/Blog"}>
+                      <li className="group my-1 flex gap-3 rounded-xl px-3 py-2  transition-colors duration-300 ease-out  hover:bg-gray-200 dark:hover:bg-gray-900 ">
+                        <Pencil />
+                        <div className="font-medium dark:group-hover:text-white">
+                          Blog
+                        </div>
+                      </li>
+                    </Link>
+
                     <li className="group my-1 flex gap-3 rounded-xl px-3 py-2  transition-colors duration-300 ease-out  hover:bg-gray-200 dark:hover:bg-gray-900 ">
                       <Mail />
                       <div className="font-medium dark:group-hover:text-white">

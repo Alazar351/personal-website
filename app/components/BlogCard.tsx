@@ -2,11 +2,11 @@ import { Card, CardContent } from "@/components/ui/card";
 import Image from "next/image";
 import Placeholder from "@/public/assets/placeholder.jpg";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default async function BlogCard() {
   return (
     <section>
-      <h2 className="text-[26px] font-medium">Blog</h2>
       <div className="mt-8 grid grid-cols-1 gap-16">
         <div className="flex flex-col gap-8 md:flex-row">
           <Card className="flex flex-col gap-8 border-0 shadow-none dark:bg-transparent md:flex-row-reverse md:gap-10">
@@ -25,12 +25,14 @@ export default async function BlogCard() {
                 learning have emerged as pivotal elements in shaping the future
                 of UI/UX design
               </p>
-              <Button
-                variant={"outline"}
-                className="mt-6 w-full text-sm md:w-[112px]"
-              >
-                Read More
-              </Button>
+              <Link href={"/Blog/Detail"}>
+                <Button
+                  variant={"outline"}
+                  className="mt-6 w-full text-sm md:w-[112px]"
+                >
+                  Read More
+                </Button>
+              </Link>
             </CardContent>
           </Card>
         </div>
