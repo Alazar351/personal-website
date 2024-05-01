@@ -8,7 +8,7 @@ export default function Home() {
     <div className="space-y-20">
       <About />
       <Work />
-      <Testimony />
+      {/* <Testimony /> */}
       <div>
         <h2 className="text-[26px] font-medium">Blog</h2>
         <BlogCard />

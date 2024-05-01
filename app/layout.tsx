@@ -17,6 +17,7 @@ export const metadata: Metadata = {
     },
   },
 };
+export const revalidate = 30; //revalidate at most 30 seconds
 
 export default function RootLayout({
   children,

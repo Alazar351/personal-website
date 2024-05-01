@@ -17,6 +17,11 @@ export default defineType({
       type: "string",
     }),
     defineField({
+      name: "cardDescription",
+      title: "Card Description",
+      type: "string",
+    }),
+    defineField({
       name: "description",
       title: "Description",
       type: "string",
@@ -116,9 +121,27 @@ export default defineType({
       of: [{ type: "string" }],
     }),
     defineField({
-      name: "testimonials",
-      title: "Testimonials",
-      type: "string",
+      name: "testimonial",
+      title: "Testimonial",
+      type: "object",
+      fields: [
+        { type: "string", name: "name" },
+        { type: "string", name: "comment" },
+        { type: "string", name: "position" },
+      ],
+    }),
+    defineField({
+      name: "testimonialImage",
+      title: "Testimonial Image",
+      type: "image",
+      options: { hotspot: true },
+      fields: [
+        {
+          name: "alt",
+          title: "Alt",
+          type: "string",
+        },
+      ],
     }),
     defineField({
       name: "conclusion",

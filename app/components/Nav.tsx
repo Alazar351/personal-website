@@ -19,6 +19,7 @@ import {
 import { useState } from "react";
 import { useMediaQuery } from "@/hooks/use-media-query";
 import Picture from "@/public/assets/picture.png";
+import Git from "@/public/assets/git.svg";
 import {
   Tooltip,
   TooltipContent,
@@ -50,9 +51,22 @@ export default function Nav() {
             </div>
           </div>
           <div className="hidden items-center justify-center gap-3 2xl:flex">
-            <div className="group flex items-center justify-center rounded-full p-1 transition-colors  duration-700 ease-out hover:bg-gray-200 dark:hover:bg-gray-900 ">
+            <Link
+              href={"https://www.linkedin.com/in/alazar-lema-453592294/"}
+              className="group flex items-center justify-center rounded-full p-1 transition-colors  duration-700 ease-out hover:bg-gray-200 dark:hover:bg-gray-900 "
+            >
               <Linkedin className="text-gray-400 group-hover:text-black dark:group-hover:text-gray-200" />
-            </div>
+            </Link>
+            <Link
+              href={"https://github.com/Alazar351"}
+              className="group flex items-center justify-center rounded-full p-1 transition-colors  duration-700 ease-out hover:bg-gray-200 dark:hover:bg-gray-900 "
+            >
+              <Image
+                src={Git}
+                alt="Github"
+                className=" fill-gray-400  dark:invert  dark:group-hover:bg-gray-200"
+              />
+            </Link>
           </div>
           <TooltipProvider delayDuration={0}>
             <ul className="hidden flex-col gap-1 dark:text-gray-400 md:flex 2xl:w-[232px]">
@@ -151,9 +165,22 @@ export default function Nav() {
         </div>
         <div className="flex gap-8 md:flex-col">
           <div className="hidden flex-col gap-4 border-t-2 border-t-gray-300 pt-8 dark:border-t-gray-800 md:flex 2xl:hidden">
-            <div className="group flex items-center justify-center rounded-full p-1 transition-colors  duration-700 ease-out hover:bg-gray-200 dark:hover:bg-gray-900 ">
+            <Link
+              href={"https://www.linkedin.com/in/alazar-lema-453592294/"}
+              className="group flex items-center justify-center rounded-full p-1 transition-colors  duration-700 ease-out hover:bg-gray-200 dark:hover:bg-gray-900 "
+            >
               <Linkedin className="text-gray-400 group-hover:text-black dark:group-hover:text-gray-200" />
-            </div>
+            </Link>
+            <Link
+              href={"https://github.com/Alazar351"}
+              className="group flex items-center justify-center rounded-full p-1 transition-colors  duration-700 ease-out hover:bg-gray-200 dark:hover:bg-gray-900 "
+            >
+              <Image
+                src={Git}
+                alt="Github"
+                className=" fill-gray-400  dark:invert  dark:group-hover:bg-gray-200"
+              />
+            </Link>
           </div>
           <ModeToggle />
           {/* The mobile menu */}
