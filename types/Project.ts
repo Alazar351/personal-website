@@ -1,5 +1,3 @@
-import { PortableTextBlock } from "sanity";
-
 export type ProjectDetail = {
   _id: string;
   _createdAt: Date;

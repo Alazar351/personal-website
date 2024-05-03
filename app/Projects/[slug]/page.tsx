@@ -3,7 +3,6 @@ import { Button } from "@/components/ui/button";
 import { ChevronLeft, Calendar, UserRoundCheck } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import Person1 from "@/public/assets/person1.jpg";
 import { client } from "@/sanity/lib/client";
 import { urlForImage } from "@/sanity/lib/image";
 import { ProjectDetail } from "@/types/Project";
