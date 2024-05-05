@@ -14,6 +14,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
+import { useToast } from "@/components/ui/use-toast";
 
 const formSchema = z.object({
   name: z.string().min(1, {
@@ -33,6 +34,8 @@ const formSchema = z.object({
 });
 
 export default function Message() {
+  const { toast } = useToast();
+
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -42,7 +45,38 @@ export default function Message() {
     },
   });
 
-  const handleSubmit = (values: z.infer<typeof formSchema>) => {};
+  async function handleSubmit(values: z.infer<typeof formSchema>) {
+    const submitButton: any = document.querySelector('button[type="submit"]');
+    submitButton.disabled = true;
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: JSON.stringify({
+        access_key: "05a44ceb-5ee6-4ba0-9e68-3d6a09e9e9e7",
+        name: values.name,
+        email: values.emailAddress,
+        message: values.message,
+      }),
+    });
+
+    const result = await response.json();
+    if (result.success) {
+      toast({
+        title: "Successfully submitted",
+      });
+    } else {
+      toast({
+        variant: "destructive",
+        title: "Failed to submit",
+        description: "There was a problem submitting",
+      });
+    }
+  }
+
   return (
     <section>
       <h2 className="mb-8 mt-[120px] text-[26px] font-medium">
