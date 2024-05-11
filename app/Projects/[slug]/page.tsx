@@ -158,7 +158,7 @@ export default async function PortfolioDetail({
                   height={100}
                   className="h-8 w-8 dark:invert"
                 />
-                <p id="tools" className="text-lg font-medium">
+                <p id="tools" className="text-lg font-medium capitalize">
                   {tool}
                 </p>
               </div>
