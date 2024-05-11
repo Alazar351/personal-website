@@ -14,7 +14,7 @@ export default function Info() {
           <p className="mt-1 text-sm text-muted-foreground">E-mail</p>
         </div>
         <div className="basis-full">
-          <p>+1 (612)-495-6250</p>
+          <p>+1 (612)-460-0289</p>
           <p className="mt-1 text-sm text-muted-foreground">Phone</p>
         </div>
       </div>

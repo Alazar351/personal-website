@@ -1,6 +1,7 @@
 import CopyEmail from "@/app/components/CopyEmail";
 import { Button } from "@/components/ui/button";
 import { MapPin } from "lucide-react";
+import Link from "next/link";
 
 export default function About() {
   return (
@@ -22,9 +23,11 @@ export default function About() {
         to enhance usability and engagement on websites and applications.
       </p>
       <div className="flex flex-col md:flex-row md:gap-5">
-        <Button className="mb-4 w-full rounded-lg transition-colors duration-700 ease-out dark:bg-[#282828] dark:text-white dark:hover:bg-[#424242] md:max-w-20">
-          About
-        </Button>
+        <Link href="/About">
+          <Button className="mb-4 w-full rounded-lg transition-colors duration-700 ease-out dark:bg-[#282828] dark:text-white dark:hover:bg-[#424242] md:max-w-20">
+            About
+          </Button>
+        </Link>
         <CopyEmail />
       </div>
     </section>

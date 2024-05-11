@@ -8,7 +8,7 @@ import { Toaster } from "@/components/ui/toaster";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Personal Website",
+  title: "Alazar's Website",
   description:
     "The website of Alazar Lema, Full Stack Nextjs Developer, located in Minnesota, USA. ",
   icons: {
