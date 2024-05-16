@@ -7,7 +7,7 @@ export default function Service() {
           <p className="text-lg font-medium">Frontend Development</p>
         </div>
         <div className="flex items-center justify-start gap-4  bg-[#efeff0] p-5  dark:bg-[#282828] md:rounded-tr-xl">
-          <p className="text-lg font-medium">E-Commerce Development</p>
+          <p className="text-lg font-medium">Blog Integration</p>
         </div>
         {/* Add more services here v */}
         <div className="flex items-center justify-start gap-4  bg-[#efeff0] p-5  dark:bg-[#282828] ">
