@@ -10,10 +10,10 @@ export default function Intro() {
           Nextjs Developer
         </p>
         <p className="mt-10 text-lg text-muted-foreground">
-          Alazar, a fullstack Nextjs developer from Minnesota with 2 years of
-          experience focusing bringing design concepts to life and collaborating
-          closely with clients to understand their unique needs and deliver
-          solutions that exceed expectations.
+          Alazar, a Nextjs developer from Minnesota with 2 years of experience
+          focusing bringing design concepts to life and collaborating closely
+          with clients to understand their unique needs and deliver solutions
+          that exceed expectations.
         </p>
         <p className="mt-5 text-lg text-muted-foreground">
           I excel in accurately translating design mockups into fully responsive

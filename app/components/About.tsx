@@ -11,7 +11,7 @@ export default function About() {
       </li>
       <div className="mb-10 text-3xl font-semibold leading-relaxed  ">
         <p>Hello! I'm Alazar 👋</p>
-        <p className="text-gray-500">Full Stack Nextjs Developer</p>
+        <p className="text-gray-500">Nextjs Developer</p>
       </div>
       <li className="mb-10 flex gap-3 text-amber-700 dark:text-amber-500">
         <MapPin />
