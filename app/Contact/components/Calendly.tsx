@@ -9,6 +9,9 @@ export default function Calendly() {
   useEffect(() => {
     setRoot(document.getElementById("root"));
   }, []);
+
+  if (!root) return null;
+
   return (
     <Button asChild>
       <PopupButton
