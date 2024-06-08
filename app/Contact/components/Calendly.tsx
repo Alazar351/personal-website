@@ -1,10 +1,11 @@
 "use client";
+import { Button } from "@/components/ui/button";
 import React from "react";
 import { PopupButton } from "react-calendly";
 
 export default function Calendly() {
   return (
-    <div>
+    <Button asChild>
       <PopupButton
         url="https://calendly.com/alazar-lema351/quick-call"
         /*
@@ -13,7 +14,8 @@ export default function Calendly() {
          */
         rootElement={document.body}
         text="Schedule Call"
+        className="w-full transition-colors duration-700 ease-out dark:bg-[#282828] dark:text-white dark:hover:bg-[#424242] md:max-w-36"
       />
-    </div>
+    </Button>
   );
 }
