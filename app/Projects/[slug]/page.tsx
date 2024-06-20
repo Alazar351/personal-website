@@ -67,7 +67,7 @@ export default async function PortfolioDetail({
               {data.description}
             </p>
           </div>
-          <Link href={`${data.url}`}>
+          <Link href={`${data.url}`} target="_blank" rel="noreferrer noopener">
             <Button className="w-full md:w-max">Live Preview</Button>
           </Link>
         </div>
