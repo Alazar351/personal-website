@@ -5,9 +5,13 @@ import { client } from "@/sanity/lib/client";
 import { urlForImage } from "@/sanity/lib/image";
 import { projectCard } from "@/types/Project";
 
-async function getData() {
+type PortfolioProps = {
+  limit?: number;
+};
+
+async function getData(limit?: number) {
   const query = `
-  *[_type == 'project'] | order(_createdAt desc){
+  *[_type == 'project'] | order(_createdAt desc)[0...${limit ?? 100}]{
     name,
     image,
     cardDescription,
@@ -20,8 +24,8 @@ async function getData() {
   return data;
 }
 
-export default async function Portfolio() {
-  const data: projectCard[] = await getData();
+export default async function Portfolio({ limit }: PortfolioProps) {
+  const data: projectCard[] = await getData(limit);
   return (
     <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
       {data.map((project, idx) => (

@@ -199,7 +199,7 @@ export default async function PortfolioDetail({
       </section>
       <div className="mt-20 flex flex-col gap-8">
         <p className="text-[26px] font-medium">More projects</p>
-        <Portfolio />
+        <Portfolio limit={2} />
         <Link href={"/Projects"}>
           <Button
             variant={"outline"}
