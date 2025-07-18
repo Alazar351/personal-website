@@ -1,6 +1,3 @@
-import Image from "next/image";
-import Profile from "@/public/assets/picture.png";
-
 export default function Intro() {
   return (
     <section className="flex gap-10">

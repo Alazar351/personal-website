@@ -18,7 +18,6 @@ import {
 } from "../../components/ui/drawer";
 import { useState } from "react";
 import { useMediaQuery } from "@/hooks/use-media-query";
-import Picture from "@/public/assets/picture.png";
 import Git from "@/public/assets/git.svg";
 import {
   Tooltip,
@@ -45,13 +44,17 @@ export default function Nav() {
           </div>
           <div className="hidden items-center justify-center gap-3 2xl:flex">
             <Link
-              href={"https://www.linkedin.com/in/alazar-lema-453592294/"}
+              href={"https://www.linkedin.com/in/alazar-lema-b57227375/"}
+              target="_blank"
+              rel="noreferrer noopener"
               className="group flex items-center justify-center rounded-full p-1 transition-colors  duration-700 ease-out hover:bg-gray-200 dark:hover:bg-gray-900 "
             >
               <Linkedin className="text-gray-400 group-hover:text-black dark:group-hover:text-gray-200" />
             </Link>
             <Link
               href={"https://github.com/Alazar351"}
+              target="_blank"
+              rel="noreferrer noopener"
               className="group flex items-center justify-center rounded-full p-1 transition-colors  duration-700 ease-out hover:bg-gray-200 dark:hover:bg-gray-900 "
             >
               <Image
