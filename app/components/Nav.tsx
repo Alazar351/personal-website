@@ -36,13 +36,6 @@ export default function Nav() {
       <nav className="flex items-center justify-between px-6 py-4 md:h-full md:flex-col md:px-4 md:py-10 ">
         <div className="flex flex-col gap-8">
           <div className="flex items-center justify-center gap-4 2xl:flex-col">
-            <Image
-              className="w-12 rounded-lg 2xl:w-14"
-              src={Picture}
-              width={48}
-              height={48}
-              alt="Profile Picture"
-            />
             <div className="items-center justify-center gap-1 md:hidden 2xl:flex 2xl:flex-col">
               <p className="font-medium">Alazar Lema</p>
               <p className="mt-1 text-sm text-muted-foreground 2xl:m-0">

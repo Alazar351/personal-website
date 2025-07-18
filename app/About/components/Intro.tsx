@@ -25,11 +25,6 @@ export default function Intro() {
           contribute to real-world products, and grow into a stronger developer.
         </p>
       </div>
-      <Image
-        src={Profile}
-        alt="Picture of Alazar Lema"
-        className="hidden rounded-xl md:block md:h-[120px] md:w-[120px] lg:h-[200px] lg:w-[200px]"
-      />
     </section>
   );
 }
